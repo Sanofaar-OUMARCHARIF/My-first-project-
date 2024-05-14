@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-aquiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Mannzeco - Best Online Shopping </title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <section id="header">
+            <a href="index.html"><img src="Img/logo.png" class="logo" alt=""> </a>
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product">
+                    <button class="search-btn"> search </button>
+                </div>
+                <div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="men.html">Men</a>
+                            <ul>
+                                <li><a href="men.html">Shirt</a></li>
+                                <li><a href="men.html">T-Shirt</a></li>
+                                <li><a href="men.html">Pantalon</a></li>
+                                <li><a href="men.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="women.html"> Women </a>
+                            <ul>
+                                <li><a href="women.html">Shirt</a></li>
+                                <li><a href="women.html">T-Shirt</a></li>
+                                <li><a href="women.html">Pantalon</a></li>
+                                <li><a href="women.html">Dress</a></li>
+                                <li><a href="women.html">Accessories</a></li>
+                            </ul>
+                        </li>
+                    <li> <a href="kids.html"> Kids </a>
+                        <ul>
+                            <li><a href="kids.html">Onesies</a></li>
+                            <li><a href="kids.html">Pajamas</a></li>
+                            <li><a href="kids.html">Salopette</a></li>
+                            <li><a href="kids.html">Occasional Outfit</a></li>
+                            <li><a href="kids.html">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li> <a class="active" href="login.html"><i class="fa fa-user-circle"></i> </a> </li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a> </li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </section>
+
+        <div class="wrapper">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()"> Login</button>
+                    <button type="button" class="toggle-btn"onclick="register()"> Register</button>
+                </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-page" placeholder="Username" required>
+                    <input type="password" class="input-page" placeholder="Password" required>
+                    <br><input type="checkbox" class="check-box"><span>Remember me</span><br>
+                    <button type="submit" class="submit-btn"><a href="index.html"> Login </button> </a>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-page" placeholder="Username" required>
+                    <input type="email" class="input-page" placeholder="Email ID" required>
+                    <input type="password" class="input-page" placeholder="Password" required> 
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span><br>
+                    <button type="submit" class="submit-btn"> <a href="index.html"> Register </button> </a>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0px";
+            }
+        </script>
+
+    </body>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img src="Img/logo.png" alt="" style="height: 50px; width: 50px;">
+            <h4> Contact </h4>
+            <p><strong>Address: </strong>  Door 20 Jean Rose street Paris </p>
+            <p><strong>Phone:</strong> 01.67.45.23.88 / 01.69.73.85.15 </p>
+            <p><strong>Hours:</strong> 10h - 18h, Monday - Saturday </p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i> 
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4> About</h4>
+            <a href="#"> About Us </a>
+            <a href="#"> Delivery Information </a>
+            <a href="#"> Privacy Policy </a>
+            <a href="#"> Terms & Conditions </a>
+            <a href="#"> Contact Us </a>
+        </div>
+        <div class="col">
+            <h4> My Account </h4>
+            <a href="#"> Sign In </a>
+            <a href="#"> View Cart </a>
+            <a href="#"> My Wishlist </a>
+            <a href="#"> Track My Order </a>
+            <a href="#"> Help </a>
+        </div>
+        <div class="col install">
+            <h4> Install App </h4>
+            <p> From App Store or Google Play </p> <br>
+            <div class="row">
+                <img src="Img/pay/app.jpg" alt="">
+                <img src="Img/pay/play.jpg" alt="">
+            </div>
+            <br><p> Secured Payment Gateways </p>
+            <br><img src="Img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <br><p> © 2021-2024, Mannzeco.com </p> 
+        </div>
+       </footer>
+
+</html>
